@@ -61,6 +61,8 @@ void setup() {
     counter++;
     delay(2000);
   }
+  LoRa.setTxPower(20); //max 20
+  LoRa.setSignalBandwidth(62.5E3);
   if (counter == 10) {
     // Increment readingID on every new reading
     Serial.println("Starting LoRa failed!"); 

@@ -8,8 +8,8 @@ void startDHT()
 }
 
 void getReadings(){
-  long rand1=random(10, 20);
-  long rand2=random(20, 30);
+  long rand1=random(10, 100);
+  long rand2=random(101, 200);
   humidity = rand1; //dht.readHumidity();
   temperature = rand2; //dht.readTemperature();
   Serial.print(F("Humidity: "));

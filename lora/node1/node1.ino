@@ -27,8 +27,10 @@ void setup() {
   //initialize Serial Monitor
   Serial.begin(115200);
   dht.begin();
-  startDHT();
+  //startDHT();
+  
   startLoRA();
+
 }
 void loop() {
   getReadings();
